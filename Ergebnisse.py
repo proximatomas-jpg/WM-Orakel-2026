@@ -63,7 +63,7 @@ def get_team_stats(team):
 # ==========================================
 # 4. DAS WEB-INTERFACE
 # ==========================================
-st.title("🏆 WM 2026 - KI Orakel")
+st.title("🏆 WM 2026 Orakel")
 st.markdown("Statistisches Poisson-Modell basierend auf historischen Länderspielen.")
 
 # Layout in zwei Spalten für die Teamauswahl (Sieht auf dem Handy super aus)
