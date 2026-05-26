@@ -141,4 +141,4 @@ if st.button("⚽ Spiel simulieren", type="primary", use_container_width=True):
                 if adv_home > adv_away:
                     st.success(f"**{home_team}** zieht ins nächste Spiel ein! (Chance: {adv_home:.1f}%)")
                 else:
-                    st.success(f"**{away_team}** zieht ins nächste Spiel ein! (Chance: {adv_away:.1f}%)")streamlit run WM_Web.py
+                    st.success(f"**{away_team}** zieht ins nächste Spiel ein! (Chance: {adv_away:.1f}%)")
