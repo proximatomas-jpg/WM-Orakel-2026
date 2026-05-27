@@ -5,14 +5,14 @@ from scipy.stats import poisson
 from pathlib import Path
 
 # ==========================================
-# 1. SEITEN-KONFIGURATION (Muss ganz oben stehen)
+# 1. SEITEN-KONFIGURATION 
 # ==========================================
 st.set_page_config(page_title="WM 2026 Orakel", page_icon="⚽", layout="centered")
 
 # ==========================================
 # 2. DATEN LADEN (Mit Cache!)
 # ==========================================
-# @st.cache_data sorgt dafür, dass die riesige CSV nicht bei jedem Klick neu geladen wird!
+
 @st.cache_data
 def load_and_prep_data():
     # TRAGE HIER DEINEN PFAD EIN:
@@ -42,7 +42,7 @@ global_mean_goals = np.average(
 )
 
 # ==========================================
-# 3. BERECHNUNGS-LOGIK (Vereinfacht für Web)
+# 3. BERECHNUNGS-LOGIK 
 # ==========================================
 def get_team_stats(team):
     games = df[(df["home_team"] == team) | (df["away_team"] == team)]
@@ -66,7 +66,7 @@ def get_team_stats(team):
 st.title("🏆 WM 2026 Orakel")
 st.markdown("Statistisches Poisson-Modell basierend auf historischen Länderspielen.")
 
-# Layout in zwei Spalten für die Teamauswahl (Sieht auf dem Handy super aus)
+
 col1, col2 = st.columns(2)
 
 with col1:
